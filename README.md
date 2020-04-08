@@ -3,7 +3,7 @@
 上記本の学習記録用リポジトリ
 
 ## Environment
-WSL Ubuntu18.04
+WSL Ubuntu18.04  
 Ocaml 4.05.0
 
 ## Compile
