@@ -2,7 +2,7 @@
 
 上記本の学習記録用リポジトリ
 
-## Execution environment
+## Environment
 windows10 / WSL ubuntu18.04
 
 ## Compile
