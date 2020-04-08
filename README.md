@@ -11,7 +11,14 @@ Ocaml 4.05.0
 $ ocamlopt -o exfilename source.ml
 ```
 
-## Usage
+## Execute
 ```bash
 $ ./exfilename
+```
+
+文字化けが発生した場合  
+./ocamlinitを作成して以下を記述
+```
+let print_non_escaped_string ppf = Format.fprintf ppf "\"%s\"";;
+#install_printer print_non_escaped_string;;
 ```
