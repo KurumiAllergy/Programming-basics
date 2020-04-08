@@ -4,6 +4,7 @@
 
 ## Environment
 WSL Ubuntu18.04
+Ocaml 4.05.0
 
 ## Compile
 ```bash
