@@ -16,6 +16,12 @@ $ ocamlopt -o exfilename source.ml
 $ ./exfilename
 ```
 
+or
+
+```bash
+# #use "source.ml" ;;
+```
+
 文字化けが発生した場合  
 .ocamlinitを作成して以下を記述
 ```
