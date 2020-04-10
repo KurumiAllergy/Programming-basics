@@ -17,7 +17,7 @@ $ ./exfilename
 ```
 
 文字化けが発生した場合  
-./ocamlinitを作成して以下を記述
+.ocamlinitを作成して以下を記述
 ```
 let print_non_escaped_string ppf = Format.fprintf ppf "\"%s\"";;
 #install_printer print_non_escaped_string;;
