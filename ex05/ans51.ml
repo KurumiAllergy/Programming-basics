@@ -10,5 +10,5 @@
 (*if true < false then 1 else "2"*)
 (*This expression has type string but an expression was expected of type int : "2"*)
 
-if not (3 = 4) then 1 < 2 else 1 > 2
+(*if not (3 = 4) then 1 < 2 else 1 > 2*)
 (*bool = true*)
