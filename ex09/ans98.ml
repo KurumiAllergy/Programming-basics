@@ -22,13 +22,13 @@ let test1 = otomeza [] = []
 
 let test2 = otomeza
 [{ 
-  name = "宮原"; 
+  name = "田中"; 
   shintyo = 1.63; 
   taiju = 55.0; 
-  tsuki = 6; 
+  tsuki = 8; 
   hi = 30; 
   ketsueki = "B" 
-}] = []
+}] = ["田中"]
 
 let test3 = otomeza 
 [{ 
