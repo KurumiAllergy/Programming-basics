@@ -30,4 +30,4 @@ let rec gakusei_max lst = match lst with
 let test1 = gakusei_max lst1 = {namae = ""; tensuu = min_int; seiseki = ""}
 let test2 = gakusei_max lst2 = gakusei2
 let test3 = gakusei_max lst3 = gakusei3
-let test4 = gakusei_max lst5 = gakusei1#use "ans105.ml";;
+let test4 = gakusei_max lst5 = gakusei1
