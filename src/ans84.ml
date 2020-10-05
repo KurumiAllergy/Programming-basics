@@ -2,7 +2,7 @@
 (*目的 : person_t型のデータを受け取ったら名前と血液型の文字列を返す*)
 (*ketsueki_hyoji : peroon_t -> string*)
 let ketsueki_hyoji person = match person with
-    {name = n; shintyo = shi; taiju = tai; tsuki = tsu; hi = h; ketsueki = ketsu} ->
+    {name = n; shintyo = shi; taiju = tai; tanjo = tsu; hi = h; ketsueki = ketsu} ->
         n ^ "さんの血液型は" ^ ketsu ^ "型です"
 
 (*test*)
