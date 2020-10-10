@@ -14,12 +14,12 @@ let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
             {namae = "asai"; tensuu = 70; seiseki = "B"}; 
             {namae = "kaneko"; tensuu = 85; seiseki = "A"}]
 
-(* 血液型がA型か調べる *)
+(* 成績がAか調べる *)
 (* is_A : gakusei_t -> bool *)
 let is_A gakusei = match gakusei with
 | {namae = na; tensuu = ten; seiseki = sei} -> sei = "A" 
 
-(* A型の人数を返す *)
+(* 成績がAの人数を調べる *)
 (* count_A : gakusei_t list -> int *)
 let count_A lst = List.length (List.filter is_A lst)
 

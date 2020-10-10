@@ -14,7 +14,7 @@ let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
             {namae = "asai"; tensuu = 70; seiseki = "B"}; 
             {namae = "kaneko"; tensuu = 85; seiseki = "A"}]
 
-(* リストの数字が偶数の物だけ抽出 *)
+(* リストの数字が偶数の要素だけ抽出 *)
 (* even : int list -> int list *)
 let even lst = 
   (* 偶数かどうか判定 *)
@@ -27,10 +27,10 @@ let test1 = even [] = []
 let test2 = even [1; 2; 3] = [2]
 let test3 = even [2; 4; 6; 8] = [2; 4; 6; 8]
 
-(* A型の人数を返す *)
+(* 成績がAの人数を調べる *)
 (* count_A : gakusei_t list -> int *)
 let count_A lst = 
-  (* 血液型がA型か調べる *)
+  (* 成績がAか調べる *)
   (* is_A : gakusei_t -> bool *)
   let is_A gakusei = match gakusei with
   {namae = na; tensuu = te; seiseki = se} -> se = "A" in
