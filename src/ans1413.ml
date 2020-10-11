@@ -6,15 +6,15 @@
 (* 必要な処理を行った後、未確定の駅のリストvを返す *)
 (* koushin -> eki_t list -> eki_t list *)
 let koushin p v = 
-          let f q = (fun p q -> match (p, q) with 
+          List.map (fun q -> match (p, q) with 
             ({namae = pn; saitan_kyori = ps; temae_list = pt}, {namae = qn; saitan_kyori = qs; temae_list = qt}) -> 
               let kyori = get_ekikan_kyori pn qn global_ekikan_list in 
                 if kyori = infinity 
                   then q 
                   else if ps +. kyori < qs 
                     then {namae = qn; saitan_kyori = ps +. kyori; temae_list = qn :: pt} 
-                    else q) p q in
-                List.map f v
+                    else q) 
+                v
 
 (* 駅の例 *) 
 let eki1 = {namae="池袋"; saitan_kyori = infinity; temae_list = []} 
