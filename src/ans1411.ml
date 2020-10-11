@@ -10,7 +10,7 @@ let ekimei_list = [
 ] 
 
 (*ekimei_t型のリストを受け取ったらeki_t型のリストを作成*)
-(*make_eki_list : ekimei_t list -> eki_t -> eki_t list *)
+(*make_eki_list : ekimei_t list -> eki_t list *)
 let make_eki_list lst = 
   List.map (fun {kanji = kj; kana = ka; romaji = rm ; shozoku = sh} ->
               {namae = kj; saitan_kyori = infinity; temae_list = []}) 
@@ -37,7 +37,7 @@ let eki_list = [
 ] 
 
 (*eki_t型のリストと起点を受け取ったら初期化されたリストを返す*)
-(*shokika : eki_t -> string -> list eki_t list*)
+(*shokika : eki_t -> string -> eki_t list*)
 let shokika lst kiten = 
   List.map (fun ({namae = kj; saitan_kyori = sai; temae_list = tem} as first) -> 
               if kj = kiten 
